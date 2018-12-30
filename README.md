@@ -13,3 +13,13 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 # Observations:
 
 1) Mean and std brings no improvement :(
+
+# ToDo:
+
+- [x] fp_16
+- [ ] alpha and gamma for focal loss
+- [ ] metric
+- [ ] mean and std fix
+- [ ] Optimal augmentation
+- [ ] submission
+- [ ] use mixup
