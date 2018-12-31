@@ -22,6 +22,11 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 - [ ] mean and std fix
 - [ ] Optimal augmentation
 - [ ] submission
+- [ ] use image up scaling
 - [ ] use mixup
-- [ ] Split by Patient
+- [x] Split by Patient
+- [x] Split Random
+- [ ] Split by name like fold
+- [ ] copy files to balance hem and all
+- [ ] Split by number of patients
 - [ ] metrix for each patient
