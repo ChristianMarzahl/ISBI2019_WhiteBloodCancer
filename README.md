@@ -17,9 +17,11 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 # ToDo:
 
 - [x] fp_16
-- [ ] alpha and gamma for focal loss
-- [ ] metric
+- [ ] optimal alpha and gamma for focal loss
+- [x] metric
 - [ ] mean and std fix
 - [ ] Optimal augmentation
 - [ ] submission
 - [ ] use mixup
+- [ ] Split by Patient
+- [ ] metrix for each patient
