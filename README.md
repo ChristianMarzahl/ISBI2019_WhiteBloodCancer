@@ -12,7 +12,7 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 
 # Observations:
 
-1) Mean and std brings no improvement :(
+1) All cells are arround 30 percent larger
 
 # Literature
 1) Blood Cells - A Practical Guide, 5E (2015)
