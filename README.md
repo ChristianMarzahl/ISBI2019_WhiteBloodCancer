@@ -14,19 +14,34 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 
 1) Mean and std brings no improvement :(
 
+# Literature
+1) Blood Cells - A Practical Guide, 5E (2015)
+1.1) acute lymphoblastic leukaemia, 457-60, 458-60, 459
+
+
 # ToDo:
 
+## Network
 - [x] fp_16
 - [ ] optimal alpha and gamma for focal loss
+
+## Evaluation
 - [x] metric
-- [ ] mean and std fix
-- [ ] Optimal augmentation
 - [ ] submission
-- [ ] use image up scaling
-- [ ] use mixup
 - [x] Split by Patient
 - [x] Split Random
-- [ ] Split by name like fold
+- [x] Split by name like fold via regex
 - [ ] copy files to balance hem and all
 - [ ] Split by number of patients
 - [ ] metrix for each patient
+- [ ] evaluation: set all images from one patient to the same label
+
+## Preprocessing
+- [x] mean and std fix
+- [ ] Optimal augmentation
+- [ ] use image up scaling [64,128,256,450]
+- [ ] use mixup
+- [ ] fit cells to image size
+
+## Statistics
+- [ ] try to classify cells by size
