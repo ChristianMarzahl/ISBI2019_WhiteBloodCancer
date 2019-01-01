@@ -24,6 +24,7 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 ## Network
 - [x] fp_16
 - [ ] optimal alpha and gamma for focal loss
+- [ ] U-Net
 
 ## Evaluation
 - [x] metric
@@ -41,7 +42,7 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 - [ ] Optimal augmentation
 - [ ] use image up scaling [64,128,256,450]
 - [ ] use mixup
-- [ ] fit cells to image size
+- [x] fit cells to image size
 
 ## Statistics
-- [ ] try to classify cells by size
+- [x] try to classify cells by size
