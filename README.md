@@ -36,13 +36,16 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 - [ ] Split by number of patients
 - [ ] metrix for each patient
 - [ ] evaluation: set all images from one patient to the same label
+- [ ] Save best model https://docs.fast.ai/callbacks.tracker.html
 
 ## Preprocessing
 - [x] mean and std fix
 - [ ] Optimal augmentation
 - [ ] use image up scaling [64,128,256,450]
-- [ ] use mixup
+- [x] use mixup
 - [x] fit cells to image size
+- [ ] Cutout https://github.com/uoguelph-mlrg/Cutout/blob/master/util/cutout.py
+- [ ] Auto augment https://github.com/DeepVoltaire/AutoAugment/blob/master/autoaugment.py
 
 ## Statistics
 - [x] try to classify cells by size
