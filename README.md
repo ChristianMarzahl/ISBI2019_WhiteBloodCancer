@@ -41,7 +41,7 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 ## Preprocessing
 - [x] mean and std fix
 - [ ] Optimal augmentation
-- [ ] use image up scaling [64,128,256,450]
+- [x] use image up scaling [64,128,256,450]
 - [x] use mixup
 - [x] fit cells to image size
 - [x] Cutout https://github.com/uoguelph-mlrg/Cutout/blob/master/util/cutout.py
