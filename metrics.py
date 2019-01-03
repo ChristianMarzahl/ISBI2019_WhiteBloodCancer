@@ -2,6 +2,9 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import matthews_corrcoef
 
 from fastai import *
+from fastai.vision import *
+from fastai.callbacks import *
+
 
 class F1Weighted(Callback):
 
