@@ -12,7 +12,8 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 
 # Observations:
 
-1) All cells are arround 30 percent larger
+1) ALL cells are arround 30 percent larger
+
 
 # Literature
 1) Blood Cells - A Practical Guide, 5E (2015)
@@ -44,6 +45,7 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 - [x] use image up scaling [64,128,256,450]
 - [x] use mixup
 - [x] fit cells to image size
+- [ ] cut out and pad smaller to target size
 - [x] Cutout https://github.com/uoguelph-mlrg/Cutout/blob/master/util/cutout.py
 - [ ] Auto augment https://github.com/DeepVoltaire/AutoAugment/blob/master/autoaugment.py
 
