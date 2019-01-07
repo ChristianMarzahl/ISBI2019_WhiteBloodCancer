@@ -10,6 +10,16 @@ https://www.kaggle.com/iafoss/pretrained-resnet34-with-rgby-0-460-public-lb
 2) Loss
 https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-data-science-bowl-65fb9af4f36c
 
+3) Heatmap
+https://github.com/swarna04/cs230/blob/master/VisualSemanticModels_Squeezenet1_1.ipynb
+
+4) Pre trained
+https://github.com/Cadene/pretrained-models.pytorch
+
+5) Dice
+
+https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/znz-segment-buildingfootprint-20181205-comboloss-rn34.ipynb
+
 # Observations:
 
 1) ALL cells are arround 30 percent larger
@@ -24,8 +34,10 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 
 ## Network
 - [x] fp_16
-- [ ] optimal alpha and gamma for focal loss
-- [ ] U-Net
+- [x] optimal alpha and gamma for focal loss
+- [x] U-Net
+- [ ] predict rect
+- [ ] Use fpn to classify
 
 ## Evaluation
 - [x] metric
@@ -37,7 +49,7 @@ https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-d
 - [ ] Split by number of patients
 - [ ] metrix for each patient
 - [ ] evaluation: set all images from one patient to the same label
-- [ ] Save best model https://docs.fast.ai/callbacks.tracker.html
+- [x] Save best model https://docs.fast.ai/callbacks.tracker.html
 
 ## Preprocessing
 - [x] mean and std fix
