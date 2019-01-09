@@ -1,5 +1,5 @@
 # ISBI2019_WhiteBloodCancer
-https://competitions.codalab.org/competitions/20429
+https://competitionarchitecturerg/competitions/20429
 
 
 #  Useful links:
@@ -20,6 +20,7 @@ https://github.com/Cadene/pretrained-models.pytorch
 
 https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/znz-segment-buildingfootprint-20181205-comboloss-rn34.ipynb
 
+
 # Observations:
 
 1) ALL cells are arround 30 percent larger
@@ -36,8 +37,9 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 - [x] fp_16
 - [x] optimal alpha and gamma for focal loss
 - [x] U-Net
-- [ ] predict rect
+- [ ] predict rect https://github.com/radekosmulski/whale/blob/master/fluke_detection_redux.ipynb
 - [ ] Use fpn to classify
+
 
 ## Evaluation
 - [x] metric
@@ -60,6 +62,7 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 - [ ] cut out and pad smaller to target size
 - [x] Cutout https://github.com/uoguelph-mlrg/Cutout/blob/master/util/cutout.py
 - [ ] Auto augment https://github.com/DeepVoltaire/AutoAugment/blob/master/autoaugment.py
+- [ ] Stean normalisation
 
 ## Statistics
 - [x] try to classify cells by size
