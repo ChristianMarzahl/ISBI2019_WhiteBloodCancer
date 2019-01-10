@@ -38,7 +38,7 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 - [x] optimal alpha and gamma for focal loss
 - [x] U-Net
 - [ ] predict rect https://github.com/radekosmulski/whale/blob/master/fluke_detection_redux.ipynb
-- [ ] Use fpn to classify
+- [x] Use fpn to classify
 
 
 ## Evaluation
@@ -62,7 +62,9 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 - [ ] cut out and pad smaller to target size
 - [x] Cutout https://github.com/uoguelph-mlrg/Cutout/blob/master/util/cutout.py
 - [ ] Auto augment https://github.com/DeepVoltaire/AutoAugment/blob/master/autoaugment.py
-- [ ] Stean normalisation
+- [ ] Stain normalisation and convert all
+- [ ] Mixup Parameter
+
 
 ## Statistics
 - [x] try to classify cells by size
