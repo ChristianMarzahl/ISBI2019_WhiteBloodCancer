@@ -43,7 +43,7 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 
 ## Evaluation
 - [x] metric
-- [ ] submission
+- [x] submission and ensemble
 - [x] Split by Patient
 - [x] Split Random
 - [x] Split by name like fold via regex
@@ -62,8 +62,8 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 - [ ] cut out and pad smaller to target size
 - [x] Cutout https://github.com/uoguelph-mlrg/Cutout/blob/master/util/cutout.py
 - [ ] Auto augment https://github.com/DeepVoltaire/AutoAugment/blob/master/autoaugment.py
-- [ ] Stain normalisation and convert all
-- [ ] Mixup Parameter
+- [x] Stain normalisation and convert all. The images where already stain normalised
+- [x] Mixup Parameter
 
 
 ## Statistics
