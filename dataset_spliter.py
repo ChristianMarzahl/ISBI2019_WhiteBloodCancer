@@ -2,6 +2,7 @@ import random
 import re
 import numpy as np
 
+
 class SplitByPatient:
 
     def __init__(self,
@@ -41,10 +42,36 @@ class SplitByPatient:
                hem_files[:hem_split_value], \
                all_files[:all_split_value]
 
-    def split_by_patients(self, test_size=0.1):
+    def split_by_folds(self, folds: int = 5):
+
+        hem_sorted = np.asarray(sorted(self.hem_patients.items(), key=lambda kv: len(kv[1])))
+        all_sorted = np.asarray(sorted(self.all_patients.items(), key=lambda kv: len(kv[1])))
+
+        hem_count = len(self.hem_patients)
+        all_count = len(self.all_patients)
+        step = folds * 2
+
+        fold_keys_hem = {}
+        fold_keys_all = {}
+        for i in range(folds):
+            fold_keys_hem[i] = list(range(i, hem_count, step)) \
+                               + list(range(step - (i + 1), hem_count, step))
+            fold_keys_all[i] = list(range(i, all_count, step)) \
+                               + list(range(step - (i + 1), all_count, step))
+
+        flatten = lambda l: [item for sublist in l for item in sublist]
+        fold_files = {}
+        for i in range(folds):
+            fold_files[i] = flatten(hem_sorted[fold_keys_hem[i]][:, 1]) \
+                            + flatten(all_sorted[fold_keys_all[i]][:, 1])
+
+        return fold_files
+
+    def split_by_patients(self, test_size=0.1, return_keys: bool = False):
         '''
         split patients randomly
         files from the same patient can not be in train and val
+        :param return_keys:
         :param test_size:
         :return: hem train, all train, hem val, all val
         '''
@@ -74,7 +101,10 @@ class SplitByPatient:
         all_files_val = [fn for fn in all_files for key in all_keys_val
                          if 'UID_{0}_'.format(key) in str(fn)]
 
-        return hem_files_train, all_files_train, hem_files_val, all_files_val
+        if return_keys:
+            return hem_keys_val + all_keys_val
+        else:
+            return hem_files_train, all_files_train, hem_files_val, all_files_val
 
     def split_by_regex(self, train_pat: re, val_pat: re):
 
@@ -110,3 +140,5 @@ class SplitByPatient:
                     break
 
         return keys, selected_keys
+
+
