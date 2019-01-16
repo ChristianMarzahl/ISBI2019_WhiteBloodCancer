@@ -25,6 +25,10 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 
 1) ALL cells are arround 30 percent larger
 
+Id's:
+hem = 0
+ALL = 1
+
 
 # Literature
 1) Blood Cells - A Practical Guide, 5E (2015)
@@ -52,6 +56,7 @@ https://nbviewer.jupyter.org/github/daveluo/zanzibar-aerial-mapping/blob/master/
 - [ ] metrix for each patient
 - [ ] evaluation: set all images from one patient to the same label
 - [x] Save best model https://docs.fast.ai/callbacks.tracker.html
+
 
 ## Preprocessing
 - [x] mean and std fix
