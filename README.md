@@ -1,6 +1,11 @@
 # ISBI2019_WhiteBloodCancer
 https://competitionarchitecturerg/competitions/20429
 
+# Auto Encoder
+- [ ] U-Net Architecture
+- [ ] Pre trained encoder
+- [ ] Train as Superpixel and remove skip connections step by step
+
 
 #  Useful links:
 
