@@ -141,4 +141,38 @@ class SplitByPatient:
 
         return keys, selected_keys
 
+    def split_by_num_patients(self, fnames:list, num_all: int=5, num_hem: int=3):
+
+        hem_val_pat_keys = list(np.random.choice(list(self.hem_patients.keys()), 2 * num_hem, replace=False))
+        all_val_pat_keys = list(np.random.choice(list(self.all_patients.keys()), 2 * num_all, replace=False))
+
+        fold_0 = hem_val_pat_keys[:num_hem] + all_val_pat_keys[:num_all]
+        fold_1 = hem_val_pat_keys[num_hem:] + all_val_pat_keys[num_all:]
+
+        val_fold_0 = []
+        val_fold_1 = []
+        for id, fn in enumerate(fnames):
+            for pt in fold_0:
+                if 'UID_{}_'.format(pt) in str(fn.stem):
+                    val_fold_0.append(id)
+
+            for pt in fold_1:
+                if 'UID_{}_'.format(pt) in str(fn.stem):
+                    val_fold_1.append(id)
+
+        train_fold_0 = []
+        train_fold_1 = []
+        for id, fn in enumerate(fnames):
+            if id not in val_fold_0:
+                train_fold_0.append(id)
+
+            if id not in val_fold_1:
+                train_fold_1.append(id)
+
+        return [train_fold_0, train_fold_1], [val_fold_0, train_fold_1], hem_val_pat_keys+all_val_pat_keys
+
+
+
+
+
 
