@@ -28,8 +28,9 @@ class F1Weighted(Callback):
             self.y_pred.extend(preds.data.cpu().numpy())
             self.y_true.extend(last_target.data.cpu().numpy())
 
-    def on_epoch_end(self, **kwargs):
+    def on_epoch_end(self, last_metrics,  **kwargs):
         self.metric = f1_score(self.y_true, self.y_pred, average='weighted')
+        return {'last_metrics': last_metrics + [self.metric]}
 
 
 class MCC(Callback):
@@ -54,8 +55,9 @@ class MCC(Callback):
             self.y_pred.extend(preds.data.cpu().numpy())
             self.y_true.extend(last_target.data.cpu().numpy())
 
-    def on_epoch_end(self, **kwargs):
+    def on_epoch_end(self, last_metrics, **kwargs):
         self.metric = matthews_corrcoef(self.y_true, self.y_pred)
+        return {'last_metrics': last_metrics + [self.metric]}
 
 
 def intersection(preds, targs):

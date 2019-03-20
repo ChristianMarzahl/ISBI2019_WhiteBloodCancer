@@ -3,7 +3,7 @@ from fastai import *
 from fastai.vision import *
 
 
-class ImageItemListCell(ImageItemList):
+class ImageItemListCell(ImageList):
 
     def open(self, fn):
         # image = cv2.cvtColor(cv2.imread(str(fn)), cv2.COLOR_BGR2RGB)
