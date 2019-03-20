@@ -1,6 +1,11 @@
 # ISBI2019_WhiteBloodCancer
 https://competitionarchitecturerg/competitions/20429
 
+### Results:
+#### fived place on the preliminary test set with a score of 0.8764:
+Example [Notebook](https://github.com/ChristianMarzahl/ISBI2019_WhiteBloodCancer/blob/master/baseline-resnet18-Patient.ipynb) with a score of 0.8861
+
+
 # Auto Encoder
 - [x] U-Net Architecture
 - [x] Pre trained encoder
